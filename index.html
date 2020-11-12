@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&wght@400;600;900display=swap" rel="stylesheet">
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/result-screen.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+
+  </head>
+  <body>
+     <div class="app">
+      <!-- Tela onde aparecerá os resultados -->
+      <div class="result-screen">
+        <input type="submit" class="result" readonly value="0" />
+      </div>
+
+      <div class="buttons">
+        <button class="btn light-grey" onclick="resete()">AC</button>
+        <button class="btn light-grey" onclick="verifica(event)" value="/100*">%</button>
+        <button class="btn light-grey" onclick="verifica(event)" value="/">÷</button>
+        <div class="btn blue"><i class="fas fa-backspace" onclick="apagar()"></i></div>
+        <button class="btn" value="7" onclick="verifica(event)">7</button>
+        <button class="btn" value="8" onclick="verifica(event)">8</button>
+        <button class="btn" value="9" onclick="verifica(event)">9</button>
+        <button class="btn mult blue" onclick="verifica(event)" value="*">x</button>
+        <button class="btn" value="4" onclick="verifica(event)">4</button>
+        <button class="btn" value="5" onclick="verifica(event)">5</button>
+        <button class="btn" value="6" onclick="verifica(event)">6</button>
+        <button class="btn blue" onclick="verifica(event)" value="-">-</button>
+        <button class="btn" value="1" onclick="verifica(event)">1</button>
+        <button class="btn" value="2" onclick="verifica(event)">2</button>
+        <button class="btn" value="3" onclick="verifica(event)">3</button>
+        <button class="btn blue" onclick="verifica(event)" value="+">+</button>
+        <button class="btn" id="num-zero" value="0" onclick="verifica(event)">0</button>
+        <button class="btn" value="." onclick="verifica(event)" value=".">.</button>
+        <button class="btn blue" onclick="calcular()" value="=">=</button>
+      </div> 
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>

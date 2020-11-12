@@ -1,0 +1,60 @@
+
+/* Botões */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 4.2rem);
+    grid-template-rows: repeat(5, 4.2rem);
+    column-gap: .7rem;
+    row-gap: .7rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: white;
+    background: var(--btn-secondary-color);
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: var(--btn-secondary-color-hover)
+}
+
+.light-grey,
+.blue,
+.btn {
+    transition: background .2s
+}
+
+.light-grey{
+    background: var(--btn-terciary-color);
+    color: #000;
+}
+
+.light-grey:hover{
+    background: var(--btn-terciary-color-hover);
+}
+
+.blue {
+    background: var(--btn-primary-color);
+}
+
+.blue:hover {
+    background: var(--btn-primary-color-hover);
+}
+
+.mult {
+    font-size: 1.2rem;
+}
+
+#num-zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

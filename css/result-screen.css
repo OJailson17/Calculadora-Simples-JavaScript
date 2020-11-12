@@ -1,0 +1,17 @@
+/* Tela de resultados */
+.result-screen {
+    height: 10rem;
+}
+
+.result {
+    width:18rem;
+    height: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: right;
+    color: white;
+    font-size: 2rem;
+    padding: .5rem;
+    background: #817f7f;
+    border: none;
+}
